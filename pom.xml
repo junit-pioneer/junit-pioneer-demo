@@ -27,6 +27,21 @@
 	</dependencyManagement>
 
 	<dependencies>
+		<!--
+			This dependency is needed to use JSON sources from the package
+			`org.junitpioneer.jupiter.json` for parameterized tests.
+			Pioneer doesn't pull it in by default and instead:
+			  (a) just works if you already use it
+			  (b) otherwise requires you to add it explicitly
+			This configuration models case (a) where Jackson is a (non-test)
+			dependency.
+		-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.12.3</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
@@ -40,7 +55,7 @@
 		<dependency>
 			<groupId>org.junit-pioneer</groupId>
 			<artifactId>junit-pioneer</artifactId>
-			<version>1.5.0</version>
+			<version>1.7.0</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
