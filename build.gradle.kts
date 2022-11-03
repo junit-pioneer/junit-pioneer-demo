@@ -12,9 +12,9 @@ repositories {
 }
 
 dependencies {
-	testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
-	testImplementation("org.junit.jupiter:junit-jupiter-params:5.8.2")
-	testImplementation("org.junit-pioneer:junit-pioneer:1.7.0")
+	testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
+	testImplementation("org.junit.jupiter:junit-jupiter-params:5.9.1")
+	testImplementation("org.junit-pioneer:junit-pioneer:1.7.1")
 
 	// This dependency is needed to use JSON sources from the package
 	// `org.junitpioneer.jupiter.json` for parameterized tests.
