@@ -3,7 +3,7 @@ plugins {
 }
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_1_8
+	sourceCompatibility = JavaVersion.VERSION_11
 }
 
 repositories {
@@ -14,7 +14,7 @@ repositories {
 dependencies {
 	testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
 	testImplementation("org.junit.jupiter:junit-jupiter-params:5.9.1")
-	testImplementation("org.junit-pioneer:junit-pioneer:1.7.1")
+	testImplementation("org.junit-pioneer:junit-pioneer:2.0.0-RC1")
 
 	// This dependency is needed to use JSON sources from the package
 	// `org.junitpioneer.jupiter.json` for parameterized tests.
