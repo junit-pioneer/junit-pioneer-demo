@@ -23,8 +23,8 @@ dependencies {
 	//   (b) otherwise requires you to add it explicitly
 	//         (1) either as a test dependency
 	//         (2) or as a capability
-	// The following line models case (b1):
 
+	// The following line models case (b1):
 	// testImplementation("com.fasterxml.jackson.core:jackson-databind:2.12.3")
 
 	// But this configuration models case (b2) instead:
