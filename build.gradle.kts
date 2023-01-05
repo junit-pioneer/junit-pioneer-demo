@@ -7,7 +7,6 @@ java {
 }
 
 repositories {
-	mavenLocal()
 	mavenCentral()
 }
 
