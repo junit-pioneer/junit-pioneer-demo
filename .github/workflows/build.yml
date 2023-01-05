@@ -32,8 +32,10 @@ jobs:
           java-version: 11
           cache: gradle
 
-      - name: Build with Gradle
+      - name: Set up Gradle
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: 7.6
+
+      - name: Build with Gradle
         run: gradle --refresh-dependencies --stacktrace --scan clean build
