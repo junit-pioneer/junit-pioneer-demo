@@ -15,7 +15,7 @@ class PioneerTests {
 	@Test
 	@DefaultLocale(language = "en", country = "EN")
 	void pioneerTest() {
-		assertEquals(Locale.getDefault(), new Locale("en", "EN"));
+		assertEquals(new Locale("en", "EN"), Locale.getDefault());
 	}
 
 	@ParameterizedTest
