@@ -14,7 +14,7 @@ dependencies {
 	testImplementation(platform("org.junit:junit-bom:5.10.0"))
 	testImplementation("org.junit.jupiter:junit-jupiter")
 	testImplementation("org.junit.jupiter:junit-jupiter-params")
-	testImplementation("org.junit-pioneer:junit-pioneer:2.0.0-RC1")
+	testImplementation("org.junit-pioneer:junit-pioneer:2.1.0")
 
 	// This dependency is needed to use JSON sources from the package
 	// `org.junitpioneer.jupiter.json` for parameterized tests.
@@ -25,7 +25,7 @@ dependencies {
 	//         (2) or as a capability
 
 	// The following line models case (b1):
-	// testImplementation("com.fasterxml.jackson.core:jackson-databind:2.12.3")
+	// testImplementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
 
 	// But this configuration models case (b2) instead:
 	testRuntimeOnly("org.junit-pioneer:junit-pioneer") {
