@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Check out repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up JDK 11
         uses: actions/setup-java@v3
@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: Check out repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up JDK 11
         uses: actions/setup-java@v3
@@ -35,7 +35,7 @@ jobs:
       - name: Set up Gradle
         uses: gradle/gradle-build-action@v2
         with:
-          gradle-version: 7.6
+          gradle-version: 8.4
 
       - name: Build with Gradle
         run: gradle --refresh-dependencies --stacktrace --scan clean build
